@@ -1,0 +1,70 @@
+<div class="container"></div>
+<div class="d-flex temp3" id="wrapper">
+    <div class="bg-black" id="sidebar-wrapper">
+        <div class="sidebar-heading" style="color: white;">สูตร</div>
+        <div class="list-group list-group-flush">
+            <a (click)="selectLogic($event,1);" id="1" class="list-group-item list-group-item-action bg-black active-menu">สูตรตั้งต้น</a>
+            <ng-container *ngFor="let todo of array_name_logic;index as i;">
+                <a (click)="selectLogic($event,todo.nl_id);" id="{{todo.nl_id}}" class="list-group-item list-group-item-action bg-black">{{todo.nl_name}}</a>
+            </ng-container>
+        </div>
+    </div>
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-black bg-black ">
+            <button class="btn btn-primary" (click)="toggleMenu()" id="menu-toggle">เมนูสูตร </button>
+        </nav>
+        <div class="container pad-mo" style="padding-top:40px;padding-left:30px;padding-right:30px;">
+            <div class="row">
+
+                <ng-container *ngFor="let todo of data_game;index as i;">
+
+                    <div *ngIf="i<=11" class="div_room3 hover" routerLink="/sa_game/room/{{todo.room_id}}/{{new_select_logic}}">
+                        <div class="game_icon3">
+                            <div class="game_table3">
+                                TABLE {{todo.room_name}}
+                            </div>
+                            <ng-container *ngIf="todo.percent<65">
+                                <div class="percent_area2" style="color: #F65327;">
+                                    อัตราการชนะ {{todo.percent}}%
+                                </div>
+                            </ng-container>
+                            <ng-container *ngIf="todo.percent>65&&todo.percent<85">
+                                <div class="percent_area2" style="color: #dd9d22;">
+                                    อัตราการชนะ {{todo.percent}}%
+                                </div>
+                            </ng-container>
+                            <ng-container *ngIf="todo.percent>=85">
+                                <div class="percent_area2" style="color: #4db53c;">
+                                    อัตราการชนะ {{todo.percent}}%
+                                </div>
+                            </ng-container>
+
+                            <div class="text-status3">
+                                สถานะ
+                                <ng-container *ngIf="todo.status=='waiting' ">
+                                    รอผล
+                                </ng-container>
+                                <ng-container *ngIf="todo.status=='dealing' ">
+                                    แจกไพ่
+                                </ng-container>
+                                <ng-container *ngIf="todo.status=='shuffling' ">
+                                    สับไพ่
+                                </ng-container>
+                                <ng-container *ngIf="todo.status=='player_win' ">
+                                    ผู้เล่นชนะ
+                                </ng-container>
+                                <ng-container *ngIf="todo.status=='banker_win' ">
+
+                                </ng-container>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </ng-container>
+            </div>
+        </div>
+    </div>
+
+</div>

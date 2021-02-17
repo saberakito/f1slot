@@ -1,0 +1,199 @@
+.nav_menu {
+    float: left;
+    background: rgba(9, 10, 12, 0.77);
+    width: 100%;
+}
+
+.logo {
+    float: left;
+    width: 140px;
+}
+
+.text_haeder {
+    float: left;
+    padding-top: 20px;
+    width: 160px;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.nav_logo {
+    float: left;
+    width: 150px;
+    margin-right: 20px;
+}
+
+.icon_head {
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    float: right;
+    width: 300px;
+}
+
+.nav_text {
+    color: white;
+    float: left;
+    padding-top: 9px;
+    padding-left: 20px;
+}
+
+.credit_button {
+    margin-top: 4px;
+    border-radius: 10px;
+    background-color: #FD0000;
+    color: white;
+    padding-top: 2px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 2px;
+}
+
+.credit_text {
+    margin-left: 8px;
+    margin-top: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #375235;
+    color: #D6A712;
+    float: left;
+    padding-top: 4.5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 4.5px;
+}
+
+.nav_bg_sa {
+    height: 100px;
+    background: rgba(9, 10, 12, 0.77);
+}
+
+.nav_bg_sexy {
+    height: 100px;
+    background: rgba(9, 10, 12, 0.77);
+}
+
+.user_text {
+    padding-top: 10px;
+    font-size: 12px;
+    color: white;
+    width: 100%;
+}
+
+.name_text {
+    padding-left: 10px;
+    color: #D6A712;
+}
+
+.btn_lubby {
+    float: left;
+    width: 128px;
+    margin-right: 10px;
+    color: white;
+    border-radius: 10px;
+    background: rgba(83, 83, 166, 1);
+    background: -moz-linear-gradient(left, rgba(83, 83, 166, 1) 0%, rgba(59, 129, 210, 1) 74%, rgba(19, 169, 241, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83, 83, 166, 1)), color-stop(74%, rgba(59, 129, 210, 1)), color-stop(100%, rgba(19, 169, 241, 1)));
+    background: -webkit-linear-gradient(left, rgba(83, 83, 166, 1) 0%, rgba(59, 129, 210, 1) 74%, rgba(19, 169, 241, 1) 100%);
+    background: -o-linear-gradient(left, rgba(83, 83, 166, 1) 0%, rgba(59, 129, 210, 1) 74%, rgba(19, 169, 241, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(83, 83, 166, 1) 0%, rgba(59, 129, 210, 1) 74%, rgba(19, 169, 241, 1) 100%);
+    background: linear-gradient(to right, rgba(83, 83, 166, 1) 0%, rgba(59, 129, 210, 1) 74%, rgba(19, 169, 241, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#5353a6', endColorstr='#13a9f1', GradientType=1);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn_lubby:hover {
+    background: rgba(19, 169, 241, 1);
+    background: -moz-linear-gradient(left, rgba(19, 169, 241, 1) 0%, rgba(59, 129, 210, 1) 18%, rgba(83, 83, 166, 1) 62%, rgba(83, 83, 166, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19, 169, 241, 1)), color-stop(18%, rgba(59, 129, 210, 1)), color-stop(62%, rgba(83, 83, 166, 1)), color-stop(100%, rgba(83, 83, 166, 1)));
+    background: -webkit-linear-gradient(left, rgba(19, 169, 241, 1) 0%, rgba(59, 129, 210, 1) 18%, rgba(83, 83, 166, 1) 62%, rgba(83, 83, 166, 1) 100%);
+    background: -o-linear-gradient(left, rgba(19, 169, 241, 1) 0%, rgba(59, 129, 210, 1) 18%, rgba(83, 83, 166, 1) 62%, rgba(83, 83, 166, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(19, 169, 241, 1) 0%, rgba(59, 129, 210, 1) 18%, rgba(83, 83, 166, 1) 62%, rgba(83, 83, 166, 1) 100%);
+    background: linear-gradient(to right, rgba(19, 169, 241, 1) 0%, rgba(59, 129, 210, 1) 18%, rgba(83, 83, 166, 1) 62%, rgba(83, 83, 166, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#13a9f1', endColorstr='#5353a6', GradientType=1);
+    cursor: pointer;
+}
+
+.btn_logout {
+    float: left;
+    width: 128px;
+    color: white;
+    border-radius: 10px;
+    background: rgba(215, 3, 47, 1);
+    background: -moz-linear-gradient(left, rgba(215, 3, 47, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(248, 10, 129, 1) 70%, rgba(248, 10, 129, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(215, 3, 47, 1)), color-stop(38%, rgba(225, 0, 64, 1)), color-stop(70%, rgba(248, 10, 129, 1)), color-stop(100%, rgba(248, 10, 129, 1)));
+    background: -webkit-linear-gradient(left, rgba(215, 3, 47, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(248, 10, 129, 1) 70%, rgba(248, 10, 129, 1) 100%);
+    background: -o-linear-gradient(left, rgba(215, 3, 47, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(248, 10, 129, 1) 70%, rgba(248, 10, 129, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(215, 3, 47, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(248, 10, 129, 1) 70%, rgba(248, 10, 129, 1) 100%);
+    background: linear-gradient(to right, rgba(215, 3, 47, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(248, 10, 129, 1) 70%, rgba(248, 10, 129, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d7032f', endColorstr='#f80a81', GradientType=1);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn_logout:hover {
+    background: rgba(248, 10, 129, 1);
+    background: -moz-linear-gradient(left, rgba(248, 10, 129, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(215, 3, 47, 1) 70%, rgba(215, 3, 47, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(248, 10, 129, 1)), color-stop(38%, rgba(225, 0, 64, 1)), color-stop(70%, rgba(215, 3, 47, 1)), color-stop(100%, rgba(215, 3, 47, 1)));
+    background: -webkit-linear-gradient(left, rgba(248, 10, 129, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(215, 3, 47, 1) 70%, rgba(215, 3, 47, 1) 100%);
+    background: -o-linear-gradient(left, rgba(248, 10, 129, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(215, 3, 47, 1) 70%, rgba(215, 3, 47, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(248, 10, 129, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(215, 3, 47, 1) 70%, rgba(215, 3, 47, 1) 100%);
+    background: linear-gradient(to right, rgba(248, 10, 129, 1) 0%, rgba(225, 0, 64, 1) 38%, rgba(215, 3, 47, 1) 70%, rgba(215, 3, 47, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#f80a81', endColorstr='#d7032f', GradientType=1);
+    cursor: pointer;
+}
+
+.area_user {
+    width: 50%;
+}
+
+@media screen and (min-width: 425px) {
+    .nav_text {
+        margin-top: 6px;
+        font-size: 12px;
+    }
+    .credit_text {
+        margin-top: 10px;
+        margin-left: 4px;
+        font-size: 12px;
+    }
+    .credit_button {
+        margin-top: 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .text_haeder {
+        padding-top: 10px;
+    }
+    .user_text {
+        font-size: 14px;
+    }
+    .icon_head {
+        margin-top: 24px;
+    }
+    .nav_text {
+        margin-top: 0px;
+        font-size: 1em;
+    }
+    .credit_text {
+        margin-top: 4px;
+        font-size: 1em;
+    }
+    .credit_button {
+        margin-top: 10px;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .btn_logout {
+        margin-top: 0px;
+    }
+}

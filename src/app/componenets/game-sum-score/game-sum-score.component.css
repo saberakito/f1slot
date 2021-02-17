@@ -1,0 +1,62 @@
+.card{
+    margin-bottom: 10px !important;
+}
+.action_area{
+    position: fixed;
+    bottom: -15px;
+}
+.team_area{
+    padding-bottom: 300px;
+    float: left;
+    width: 100%;
+}
+
+.result_area{
+    padding:20px;
+}
+
+
+.title_date{
+    float: left;
+    /* clear: left; */
+    color: white;
+    width: 100%;
+    clear: both;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.detailLeft{
+   padding-left:10px;
+   padding-right: 10px;
+    float: left;
+    width: 50%;
+}
+
+.detailRight{
+    padding-left:10px;
+    padding-right: 10px;
+    float: left;
+    width: 50%;
+}
+
+.tded_input{
+    /* max-width: 300px; */
+}
+@media (min-width: 425px){
+    .team_area{
+        padding-bottom: 250px;
+    }
+}
+
+@media (min-width: 768px){
+    .team_area{
+        padding-bottom: 280px;
+    }
+}
+
+@media (min-width: 1024px){
+    /* .team_area{
+        padding-bottom: 280px;
+    } */
+}

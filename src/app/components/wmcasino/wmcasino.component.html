@@ -1,0 +1,50 @@
+<div class="area_formula">
+    <ul class="list-group">
+
+        <ng-container *ngFor="let todo of array_name_logic;index as i;">
+            <li (click)="setLogic(todo.nl_id)" class="list-group-item hover">{{todo.nl_name}}</li>
+        </ng-container>
+    </ul>
+</div>
+
+
+<div class="container saxy-game pad-mo" style="padding-left:30px;padding-right:30px;">
+
+    <!-- <div class="top_Area">
+        <button type="button" class="btn btn-dark" [routerLink]="['/sa_game/1']" routerLinkActive="router-link-active" style="margin-left:20px;">สูตรที่ 1</button>
+        <button type="button" class="btn btn-dark" [routerLink]="['/sa_game/2']" routerLinkActive="router-link-active" style="margin-left:20px;">สูตรที่ 2</button>
+        <button type="button" class="btn btn-dark" [routerLink]="['/sa_game/3']" routerLinkActive="router-link-active" style="margin-left:20px;">สูตรที่ 3</button>
+    </div> -->
+
+
+    <!-- <div style="width: 100%; color:white;">
+            {{now}}
+        </div> -->
+    <div class="row">
+        <ng-container *ngFor="let todo of data_game;index as i;">
+
+
+
+            <div class="col-lg-5 col-12   hover" routerLink="/wmcasino/room/{{todo.room_id}}/{{id_logic}}" style="margin-bottom:20px;">
+
+                <div class=" col gamb ">
+                    <img src="/assets/images/content/logo_sa.png ">
+                    <span class="room ">TABLE {{todo.room_name}}</span>
+                    <ng-container *ngIf="(todo.status=='shuffling'||todo.status=='tie_win'||todo.status=='waiting'||todo.status=='dealing'||todo.status=='banker_win'||todo.status=='rest'||todo.status=='player_win' ) &&todo.b_data!='' ">
+                        <div id="winrate0 " class="hx " style="color: rgb(255, 204, 0); ">{{todo.percent}}%</div>
+                    </ng-container>
+                    <ng-container *ngIf="(todo.status=='unknown' &&todo.b_data=='' )||(todo.status=='False' &&todo.b_data!='' ) ">
+                        <span id="winrate9 " class="hx " style="color: khaki; ">ปิดปรับปรุง</span>
+                    </ng-container>
+                    <ng-container *ngIf="todo.status=='rest' &&todo.b_data=='' ">
+                        <span id="winrate9 " class="hx " style="color: khaki; ">สับไพ่</span>
+                    </ng-container>
+                    <div class="x ">
+                        <div class="top-la ">อัตราการชนะ</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2" *ngIf="i%2 ==0">&nbsp;</div>
+        </ng-container>
+    </div>
+</div>

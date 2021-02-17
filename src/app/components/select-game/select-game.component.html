@@ -1,0 +1,89 @@
+<!-- <div class="div_loading">
+    <div class="loading_area">
+
+    </div>
+</div> -->
+<div class="container">
+    <div class="lobby_logo">
+        <img class="lobby_img_logo" src="/assets/images/content/logo.png" alt="">
+        <div style="text-align: center; color: white;  top: 25%; left: 6%; font-size: 1em; text-shadow: 4px 2px black;">
+            {{member_name}}
+        </div>
+    </div>
+
+    <div class="center_area">
+        <div class="bg_top">
+            <img src="/assets/images/content/center_top.png" alt="">
+        </div>
+        <div class="top_button">
+            <div class="coice_game_btn" routerLink="/select_game">
+                <img class="icon_btn" src="/assets/images/content/coice game 2.png" alt=""> เลือกเกมส์อื่น
+                <!-- <img src="/assets/images/content/coice game.png" alt=""> -->
+            </div>
+            <div class="credit_btn" data-toggle="modal" data-target="#exampleModal">
+                <img class="icon_btn" src="/assets/images/content/credit 2.png" alt=""> Credit ที่มี : {{member_credit}}
+                <!-- <img src="/assets/images/content/credit.png" alt=""> -->
+            </div>
+            <div class="logout_btn" (click)="logout()">
+                ออกจากระบบ
+                <!-- <img src="/assets/images/content/credit.png" alt=""> -->
+            </div>
+        </div>
+        <div class="game_area">
+            <div class="row" style="width: 100%; margin: unset;    background: #9A0068;    border-bottom-left-radius: 10px;    border-bottom-right-radius: 10px;">
+                <!-- <ng-container *ngFor='let in of counter(data_length) ;let i = index'>
+                    <div class="col-12 col-md-6 col-sm-12" id="game_{{i}}" style="text-align: center;outline: none;">
+
+                        <div class="game_div border_g hvr-push hover">
+                            <img alt="">
+                            <div class="game_text">
+
+                            </div>
+                        </div>
+                    </div>
+                </ng-container> -->
+                <ng-container *ngFor="let todo of data_game;index as i;">
+                    <div class="col-12 col-md-6 col-sm-12" style="text-align: center;outline: none;" routerLink="/select_game/room/{{todo.g_id}}">
+
+                        <div class="game_div border_g hvr-push hover">
+                            <img src="http://f1slot888.com/upload/file/{{todo.pupn_image_filename}}.{{todo.pupn_image_type}}" alt="">
+                            <div class="game_text">
+                                {{todo.g_name}}
+                            </div>
+                        </div>
+                        <div style="position: absolute;
+                        bottom: 40px;
+                        color: white;
+                        padding-left: 20px;">
+                            JACKPORT {{todo.sumJack}}
+                        </div>
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+
+        <div class="textCopyright">
+            Copyright 2020 © WWW.F1SLOT888.COM All Rights Reserved.
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">เติมเครดิต</h5>
+                <button type="button" #closebutton class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" placeholder="ใส่รหัส 16 หลัก" [(ngModel)]="credit_code" id="credit_code" name="credit_code">
+            </div>
+            <div class="modal-footer">
+                <button type="button" (click)="updateCredit();" class="btn btn-primary">ตกลง</button>
+            </div>
+        </div>
+    </div>
+</div>

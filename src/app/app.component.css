@@ -1,0 +1,29 @@
+.hover:hover {
+    cursor: pointer;
+}
+
+.userArea {
+    padding: 15px;
+    float: right;
+    color: white;
+}
+
+.userArea .name {
+    margin-top: 8px;
+    float: right;
+}
+
+.userArea .credit {
+    margin-top: 8px;
+    float: right;
+    margin-left: 15px;
+}
+
+.userArea .logout {
+    float: right;
+    margin-left: 15px;
+}
+
+.userArea .logout:hover {
+    cursor: pointer;
+}
